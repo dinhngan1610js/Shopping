@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blink House</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- owlcarousel for slide -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+    <!-- fontawesom -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Blink House's</a>
+            <img src="../BlinkHouse/assets/img/logo.jpg" alt="logo-icon">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="fas fa-bars"></i></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <i class="fal fa-search"></i>
+                        <i class="fal fa-shopping-bag"></i>
+                    </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <section id="home">
+        <div class="container">
+            <h5></h5>
+            <h1><span>Best Prices</span> for BLINK</h1>
+            <p>100% Authentic and<br>offical only.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <!-- brand -->
+    <section id="brand" class="container">
+        <div class="row m-0 py-5">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="./assets/img/brand/celine.jpg" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="./assets/img/brand/coco.jpg" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="./assets/img/brand/dior.jpg" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="./assets/img/brand/ysl.jpg" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="./assets/img/brand/mac.png" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="./assets/img/brand/bvlgari.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- new -->
+    <section id="new" class="w-100">
+        <div class="row p-0 m-0">
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+                <img class="img-fluid" src="./assets/img/tag/shoes.jpg" alt="">
+                <div class="details">
+                    <h2>Standed in the Jungle</h2>
+                    <button class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+                <img class="img-fluid" src="./assets/img/tag/tiff&co.jpg" alt="">
+                <div class="details">
+                    <h2>Timeless Beauty</h2>
+                    <button class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+                <img class="img-fluid" src="./assets/img/tag/ladybag.jpg" alt="">
+                <div class="details">
+                    <h2>Elegant Allure</h2>
+                    <button class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured -->
+    <section id="featured" class="py-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Our Featured</h3>
+            <hr class="mx-auto">
+            <p>You can check out new vibes on BP's House below</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/feature/1.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Newspaper Hi-Top Dior-Sneaker</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/feature/2.png" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">mini Rider bag</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/feature/3.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Bow Headband Chanel</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/feature/4.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Men's Hats & Caps</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="my-5 py-3">
+        <div class="container">
+            <h4> Summer Vibes</h4>
+            <h1>Shine like the Star<br>UP TO 20% OFF</h1>
+            <button class="text-uppercase">Shop now</button>
+        </div>
+    </section>
+
+    <section id="clothes" class="my-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>T-Shirt</h3>
+            <hr class="mx-auto">
+            <p>You can check out new vibes on BP's House below</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/clothes/1.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Newspaper Hi-Top Dior-Sneaker</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/clothes/2.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">mini Rider bag</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/clothes/3.jpeg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Bow Headband Chanel</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/clothes/4.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Men's Oversized Cardigan</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="bags" class="my-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Favour Bags</h3>
+            <hr class="mx-auto">
+            <p>You can check out new vibes on BP's House below</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/bags/1.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">mini Lady Dior</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/bags/2.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Lambskin & Gold Metal Drawstring</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/bags/3.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Rive Gauche</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/bags/4.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Ava Bag</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="shoes" class="my-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Seak for Sneakers</h3>
+            <hr class="mx-auto">
+            <p>You can check out new vibes on BP's House below</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/shoes/1.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Dior-ID Sneaker</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/shoes/2.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Denim & Suede Calfskin</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/shoes/3.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">MALIBU Mid-Top</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <div class="product text-center col-lg-3 con-md-4 col-12">
+                <img class="img-fluid mb-3" src="./assets/img/shoes/4.jpg" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">"Z" Trainer CT-01</h5>
+                <h4 class="p-price">$ 16.10</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <p class="pt-3">This is a commercial website about fashion brands represented by BLACKPINK members.</p>
+            </div>
+            <div class="footer-one  col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" style="text-decoration: none;">LISA</a></li>
+                    <li><a href="#" style="text-decoration: none;">ROSÉ</a></li>
+                    <li><a href="#" style="text-decoration: none;">JISOO</a></li>
+                    <li><a href="#" style="text-decoration: none;">JENNIE</a></li>
+                    <li><a href="#" style="text-decoration: none;">BLACK</a></li>
+                    <li><a href="#" style="text-decoration: none;">PINK</a></li>
+                    <li><a href="#" style="text-decoration: none;">Slice of Life</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-one  col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>1, Dai Co Viet, Hanoi, Vietnam</p>
+                </div>
+
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>(+84) 84-924-8868</p>
+                </div>
+
+                <div>
+                    <h6 class="text-uppercase">EMail</h6>
+                    <p>ngandinh1610.js@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-one  col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img class="img-fliud w-25 h-100 m-2" src="./assets/img/insta/1.jpeg" alt="">
+                    <img class="img-fliud w-25 h-100 m-2" src="./assets/img/insta/2.jpg" alt="">
+                    <img class="img-fliud w-25 h-100 m-2" src="./assets/img/insta/3.jpg" alt="">
+                    <img class="img-fliud w-25 h-100 m-2" src="./assets/img/insta/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright mt-5">
+            <div class="row container mx-auto pt-5">
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="./assets/img/payment.png" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p>BLINK's House © e-Commerce 2021. All Rights Reserved</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $(this).scrollTop(0);
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
+</html>
