@@ -361,7 +361,7 @@ footer .copyright a:hover {
 
 /* input qty order */
 
-#cart .qty input {
+/* #cart .qty input {
     text-align: center;
 }
 
@@ -369,4 +369,8 @@ footer .copyright a:hover {
     color: black;
     text-transform: lowercase;
     white-space: nowrap;
+} */
+
+.input-group input {
+    text-align: center;
 }
