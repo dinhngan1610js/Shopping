@@ -9,11 +9,6 @@ button:focus {
     box-shadow: none !important;
 } */
 
-.font-poppins {
-    font-family: "Poppins", cursive;
-}
-
-
 /*# sourceMappingURL=style.css.map */
 
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap);
@@ -358,19 +353,17 @@ footer .copyright a:hover {
     background-color: palevioletred;
 }
 
-
 /* input qty order */
 
-/* #cart .qty input {
+.qty input {
     text-align: center;
 }
 
-#cart .qty button {
+.qty button {
     color: black;
+    background-color:white;
     text-transform: lowercase;
     white-space: nowrap;
-} */
-
-.input-group input {
-    text-align: center;
+    outline:black;
 }
+

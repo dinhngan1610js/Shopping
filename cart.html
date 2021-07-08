@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order・Blink House</title>
+    <title>Blink House</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -57,9 +57,12 @@
                     </li>
 
                     <li class="nav-item">
-                        <i class="fal fa-search"></i>
-                        <i class="fal fa-shopping-bag"></i>
+                        <form action="#" class="bg-white">
+                            <a href="#" class="">
+                                <span class=""><i class="fas fa-shopping-cart"></i></span>
+                            </a>
                     </li>
+
 
             </div>
         </div>
@@ -73,7 +76,7 @@
             <!-- shopping cart items -->
             <div class="row">
 
-                <!-- lisr order -->
+                <!-- list order -->
                 <div class="col-sm-10">
 
                     <div class="row border-top py-3 mt-3">
@@ -98,9 +101,9 @@
                             <!-- <div class="row"> -->
                             <div class="qty d-flex pt-2 w-75 h-15">
                                 <div class="d-flex">
-                                    <button class="qty-minus border bg-white col-sm-3"><i class="fas fa-minus"></i></button>
-                                    <input type="text" class="qty-input border bg-white col-sm-3" disabled value="1" placeholder="1">
-                                    <button class="qty-plus border bg-white col-sm-3"><i class="fas fa-plus"></i></button>
+                                    <button class="qty-minus border col-sm-3" data-id="pro1"><i class="fas fa-minus"></i></button>
+                                    <input type="text" data-id="pro1" class="qty_input border bg-white col-sm-3" disabled value="1" placeholder="1">
+                                    <button data-id="pro1" class="qty-plus border col-sm-3"><i class="fas fa-plus"></i></button>
                                 </div>
                                 <button type="submit" class="btn-delete text-danger px-3 border-right bg-white">Delete</button>
                                 <button type="submit" class="btn-delete text-danger px-3 bg-white">Save for later</button>
@@ -110,14 +113,14 @@
 
                         <div class="col-sm">
                             <div class="text-danger">
-                                $<span>888</span>
+                                $<span>16.10</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="row border-top py-3 mt-3">
                         <div class="col-sm-3 p-3">
-                            <img src="./assets/img/feature/2.png" style="height: 120px;" alt="cart2" class="img-fluid">
+                            <img src="./assets/img/feature/1.jpg" style="height: 120px;" alt="cart1" class="img-fluid">
                         </div>
 
                         <div class="col-sm-8">
@@ -137,9 +140,9 @@
                             <!-- <div class="row"> -->
                             <div class="qty d-flex pt-2 w-75 h-15">
                                 <div class="d-flex">
-                                    <button class="qty-minus border bg-white col-sm-3"><i class="fas fa-minus"></i></button>
-                                    <input type="text" class="qty-input border bg-white col-sm-3" disabled value="1" placeholder="1">
-                                    <button class="qty-plus border bg-white col-sm-3"><i class="fas fa-plus"></i></button>
+                                    <button class="qty-minus border col-sm-3" data-id="pro2"><i class="fas fa-minus"></i></button>
+                                    <input type="text" data-id="pro2" class="qty_input border bg-white col-sm-3" disabled value="1" placeholder="1">
+                                    <button data-id="pro2" class="qty-plus border col-sm-3"><i class="fas fa-plus"></i></button>
                                 </div>
                                 <button type="submit" class="btn-delete text-danger px-3 border-right bg-white">Delete</button>
                                 <button type="submit" class="btn-delete text-danger px-3 bg-white">Save for later</button>
@@ -149,10 +152,11 @@
 
                         <div class="col-sm">
                             <div class="text-danger">
-                                $<span>888</span>
+                                $<span>16.10</span>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
 
@@ -161,7 +165,7 @@
                     <div class="sub-total border text-center mt-2">
                         <h6 class="text-success py-3">Your Order</h6>
                         <div class="border-top py-4">
-                            <h5>Total (2 items)<br>
+                            <h5>Total (1 items)<br>
                                 <span class="text-danger">$<span class="text-danger" id="deal-price">888.88</span>
                             </h5>
                             <button type="submit" class="btn-order mt-3" style="background: palevioletred;">Proceed to buy</button>
@@ -316,6 +320,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
