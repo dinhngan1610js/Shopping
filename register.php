@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../loginstyle.css">
+    <link rel="stylesheet" href="loginstyle.css">
     <title>Login</title>
 
     <body>
@@ -13,64 +13,73 @@
         <div class="container">
             <div class="forms-container">
                 <div class="signin-signup">
-                    <a href="home.php" class="close-btn far fa-times-circle" style="text-decoration: none;"></a>
                     <form action="#" class="sign-in-form">
+                        <button onclick="location.href='home.php'" class="btn solid" style="background-color: #ff00ff;" type="button">Home</button>
                         <h2 class="title">Sign in</h2>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Username" />
+                            <input type="text" placeholder="Email" />
                         </div>
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
                             <input type="password" placeholder="Password" />
                         </div>
                         <input type="submit" value="Login" class="btn solid" style="background-color: #ff00ff;"/>
-                        <p class="social-text">Or Sign in with social platforms</p>
-                        <div class="social-media">
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-google"></i>
-                            </a>
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
+<!--                        <p class="social-text">Or Sign in with social platforms</p>-->
+<!--                        <div class="social-media">-->
+<!--                            <a href="#" class="social-icon">-->
+<!--                                <i class="fab fa-facebook-f"></i>-->
+<!--                            </a>-->
+<!--                            <a href="#" class="social-icon">-->
+<!--                                <i class="fab fa-twitter"></i>-->
+<!--                            </a>-->
+<!--                            <a href="#" class="social-icon">-->
+<!--                                <i class="fab fa-google"></i>-->
+<!--                            </a>-->
+<!--                            <a href="#" class="social-icon">-->
+<!--                                <i class="fab fa-linkedin-in"></i>-->
+<!--                            </a>-->
+<!--                        </div>-->
                     </form>
-                    <form action="#" class="sign-up-form">
+                    <form action="register.php" class="sign-up-form" method="post" enctype="multipart/form-data" id="reg-form">
+                        <button onclick="location.href='home.php'" class="btn solid" style="background-color: #ff00ff;" type="button">Home</button>
                         <h2 class="title">Sign up</h2>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Username" />
+                            <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
                         </div>
                         <div class="input-field">
                             <i class="fas fa-envelope"></i>
-                            <input type="email" placeholder="Email" />
+                            <input type="email" required name="email" id="email" placeholder="Email" />
                         </div>
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Password" />
+                            <input type="password" required name="password" id="password" placeholder="Password" />
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-check-circle"></i>
+                            <input type="password" placeholder="Confirm Password" />
                         </div>
                         <input type="submit" class="btn" value="Sign up" style="background-color: #ff00ff;"/>
-                        <p class="social-text">Or Sign up with social platforms</p>
-                        <div class="social-media">
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-google"></i>
-                            </a>
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
+<!--                        <p class="social-text">Or Sign up with social platforms</p>-->
+<!--                        <div class="social-media">-->
+<!--                            <a href="#" class="social-icon">-->
+<!--                                <i class="fab fa-facebook-f"></i>-->
+<!--                            </a>-->
+<!--                            <a href="#" class="social-icon">-->
+<!--                                <i class="fab fa-twitter"></i>-->
+<!--                            </a>-->
+<!--                            <a href="#" class="social-icon">-->
+<!--                                <i class="fab fa-google"></i>-->
+<!--                            </a>-->
+<!--                            <a href="#" class="social-icon">-->
+<!--                                <i class="fab fa-linkedin-in"></i>-->
+<!--                            </a>-->
+<!--                        </div>-->
                     </form>
                 </div>
             </div>
@@ -86,7 +95,7 @@
                             Sign up
                         </button>
                     </div>
-                    <img src="../assets/login.svg" class="image" alt="" />
+                    <img src="assets/login.svg" class="image" alt="" />
                 </div>
                 <div class="panel right-panel">
                     <div class="content">
@@ -99,7 +108,7 @@
                             Sign in
                         </button>
                     </div>
-                    <img src="../assets/register.svg" class="image" alt="" />
+                    <img src="assets/register.svg" class="image" alt="" />
                 </div>
             </div>
         </div>
@@ -121,6 +130,10 @@
 
     sign_in_btn.addEventListener("click", () => {
         container.classList.remove("sign-up-mode");
+    });
+
+    $('close').click(function (){
+        document.location.href='home.php'+$(this).attributes('id');
     });
     </script>
 </body>

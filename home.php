@@ -6,11 +6,8 @@
 
 <!-- home -->
 <?php
-    // include home.php
-    include ('Template/home.php');
-
-    //include brand.php
-
+    // include _home.php
+    include('Template/_home.php');
 
     //include new.php
     include ('Template/new.php');
@@ -33,9 +30,9 @@
     //include dress.php
     include ('Template/dress.php');
 
+    // include brand.php
     include ('Template/brand.php');
 ?>
-
 
 <?php
 // include footer.php
