@@ -12,7 +12,8 @@ class Product
     }
 
     // fetch product data using getData method
-    public function getData($table = 'product'){
+    public function getData($table = 'product')
+    {
         $result = $this->db->con->query("SELECT * FROM {$table}");
 
         $resultArray = array();
@@ -40,7 +41,8 @@ class Product
         }
     }
 
-    public function getDataJewelry(){
+    public function getDataJewelry()
+    {
         $result = $this->db->con->query("SELECT * FROM product WHERE categoryID = 4");
 
         $resultArray = array();
@@ -52,7 +54,8 @@ class Product
         return $resultArray;
     }
 
-    public function getDataBags(){
+    public function getDataBags()
+    {
         $result = $this->db->con->query("SELECT * FROM product WHERE categoryID = 2");
 
         $resultArray = array();
@@ -64,7 +67,8 @@ class Product
         return $resultArray;
     }
 
-    public function getDataSneakers(){
+    public function getDataSneakers()
+    {
         $result = $this->db->con->query("SELECT * FROM product WHERE categoryID = 1");
 
         $resultArray = array();
@@ -76,7 +80,8 @@ class Product
         return $resultArray;
     }
 
-    public function getDataDress(){
+    public function getDataDress()
+    {
         $result = $this->db->con->query("SELECT * FROM product WHERE categoryID = 3");
 
         $resultArray = array();

@@ -7,7 +7,7 @@
         }
     }
 ?>
-<section id="bags" class="my-5">
+<section id="bags" class="my-3">
     <div class="container text-center mt-5 py-5">
         <h3>Favour Bags</h3>
         <hr class="mx-auto">
@@ -31,11 +31,11 @@
                     <input type="hidden" name="itemID" value="<?php echo $item['itemID'] ?? '1'; ?>">
                     <input type="hidden" name="userID" value="<?php echo 1; ?>">
                     <?php
-                    if (in_array($item['itemID'],$Cart->getCartId($product->getData('cart')) ?? [])){
-                        echo '<button type="submit" disabled class="buy-btn btn btn-success">In The Cart</button>';
-                    } else{
-                        echo '<button type="submit" name="bags_submit" class="buy-btn btn btn-primary">Add To Cart</button>';
-                    }
+                        if (in_array($item['itemID'],$Cart->getCartId($product->getData('cart')) ?? [])){
+                            echo '<button type="submit" disabled class="buy-btn btn btn-success">In The Cart</button>';
+                        } else{
+                            echo '<button type="submit" name="bags_submit" class="buy-btn btn btn-primary">Add To Cart</button>';
+                        }
                     ?>
                 </form>
             </div>

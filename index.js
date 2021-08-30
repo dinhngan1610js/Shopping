@@ -4,14 +4,14 @@
     let $qty_minus = $(".qty .qty-minus");
     let $qty_plus = $(".qty .qty-plus");
     let $deal_price = $("#deal-price");
-let subtotal = 0;
+
 // click on qty plus button
     $qty_plus.click(function (e) {
 
         let $input = $(`.qty_input[data-id='${$(this).data("id")}']`);
         let $price = $(`.product_price[data-id='${$(this).data("id")}']`);
 
-        $.ajax({url: "Template/ajax.php", type: 'post', data: {itemid: $(this).data("id")}, success: function (result) {
+        $.ajax({url: "Template/ajax.php", type: 'post', data: { itemid: $(this).data("id")}, success: function (result) {
                 let obj = JSON.parse(result);
                 let item_price = obj[0]['price'];
 
@@ -22,8 +22,11 @@ let subtotal = 0;
                     // increase price using ajax
                     // value of each product
                     $price.text(parseInt(item_price * $input.val()).toFixed(2));
+                    console.log(item_price);
                     // total
-                    subtotal = parseInt($deal_price.text()) + parseInt(item_price);
+                    let subtotal = $deal_price.text() + parseInt(item_price);
+                    console.log($deal_price.text());
+                    console.log(subtotal);
                     $deal_price.text(subtotal.toFixed(2));
                 }
             }});
@@ -47,13 +50,11 @@ let subtotal = 0;
 
                     // increase price using ajax
                     $price.text(parseInt(item_price * $input.val()).toFixed(2));
-                    subtotal = parseInt($deal_price) - parseInt(item_price);
-                    $deal_price.text(subtotal.toFixed(2));
+                    // let subtotal = parseInt($deal_price.slice(1)) - parseInt(item_price);
+                    // $deal_price.text(subtotal.toFixed(2));
                 }
             }});
     });
-
-
 
 // show less/more toggle
 //     $(".show").click(function () {
@@ -65,3 +66,4 @@ let subtotal = 0;
 //             $(this).text('Show More');
 //         }
 //     });
+

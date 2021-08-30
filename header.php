@@ -1,3 +1,8 @@
+<?php
+session_start();
+include ('helper.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +28,42 @@
     // require functions.php file
     require ('functions.php');
     ?>
+    <style>
+        .dropbtn {
+            /*color: white;*/
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        .drop {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: rgba(245, 178, 178, 0.7);}
+        .drop:hover .dropdown-content {display: block;}
+    </style>
 </head>
+<?php
+$user = array();
+if (isset($_SESSION['userID'])){
+    $con = new mysqli("localhost", "root", "", "shopping");
+    $user = get_user_info($con,$_SESSION['userID']);
+}
+?>
 
 <body>
 
@@ -41,26 +81,38 @@
                     <a class="nav-link active" href="./home.php">Home</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Jewelry</a></li>
-                        <li><a class="dropdown-item" href="#">Bags</a></li>
-                        <li><a class="dropdown-item" href="#">Sneakers</a></li>
-                        <li><a class="dropdown-item" href="#">Dress</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <div class="drop nav-link">
+                        <span>Product<i class="fas fa-caret-down"></i></span>
+                        <div class="dropdown-content">
+                            <a href="./home.php#jewelry">Jewelry</a>
+                            <a href="./home.php#bags">Bags</a>
+                            <a href="./home.php#sneakers">Sneakers</a>
+                            <a href="./home.php#dress">Dress</a>
+                        </div>
+                    </div>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="https://tinyurl.com/3w3u7zde">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://tinyurl.com/3w3u7zde">Blog</a></li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="./home.php#pageBottom">Contact Us</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="register.php">
-                        <span><i class="fal fa-user"></i></span>
-                    </a>
+                    <div class="drop">
+                        <span><i class="dropbtn fal fa-user"></i></span>
+                        <div class="dropdown-content">
+                            <?php
+                            if (isset($user['lastName']) && $_SESSION['lastName']) {
+                                printf("Hi\t %s %s" ,$user['firstName'],$user['lastName']);
+                            echo '<a href ="logout.php">Log Out</a >';
+                            } else {
+                                echo '<a href="login.php">Login</a>';
+                            }
+                            ?>
+                        </div>
+                    </div>
                 </li>
 
                 <li class="nav-item">

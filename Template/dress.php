@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST"){
     }
 }
 ?>
-<section id="dress" class="my-5">
+<section id="dress" class="my-3">
     <div class="container text-center mt-5 py-5">
         <h3>Bloom your bright</h3>
         <hr class="mx-auto">

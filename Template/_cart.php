@@ -1,4 +1,5 @@
 <?php
+
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_POST['delete-submit'])) {
             $deletedRecord = $Cart->deleteCart($_POST['itemID']);
@@ -11,8 +12,10 @@
 ?>
 
 <section id="cart" class="my-5 py-5 pb-5">
-    <div class="container-fluid w-100">
+    <div class="container-fluid w-100 cart">
         <h3 class="container py-3">Shopping Cart</h3>
+        <p class="text-black-50 container "><i class="fas fa-exclamation-circle"></i> This is a fashion commerce site but the quantity of each item is unique.
+            We apologize for the inconvenience due to the fact that the stock has not been updated yet.</p>
 
         <!-- shopping cart items -->
         <div class="row">
@@ -90,22 +93,26 @@
                 <div class="card mb-3">
                     <div class="card-body">
 
-                        <h5 class="mb-3">Total</h5>
-
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                                Temporary
-                                <span id="deal-price">$<?php echo isset($subTotal) ? $Cart->getSum($subTotal) : 0; ?></span>
+<!--                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">-->
+<!--                                Temporary-->
+<!--                                <span id="deal-price">$--><?php //echo isset($subTotal) ? $Cart->getSum($subTotal) : 0; ?><!--</span>-->
+<!--                            </li>-->
+                            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                Total
+                                <span>$ <?php echo isset($subTotal) ? $Cart->getSum($subTotal) : 0; ?></span>
                             </li>
+
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                                 Shipping
-                                <span>$ 6.00</span>
+                                <span>Free</span>
                             </li>
 
                             <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                                 <div>
                                     <strong>The total amount of</strong>
                                 </div>
+                                <span><strong id="deal-price">$ <?php echo isset($subTotal) ? $Cart->getSum($subTotal) : 0; ?></strong></span>
                             </li>
                         </ul>
                         <button type="submit" class="btn-order btn-primary btn-block waves-effect waves-light">go to checkout</button>

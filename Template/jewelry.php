@@ -7,7 +7,7 @@
         }
     }
 ?>
-<section id="jewelry" class="my-5">
+<section id="jewelry" class="my-3">
     <div class="container text-center mt-5 py-5">
         <h3>Jewelry</h3>
         <hr class="mx-auto">

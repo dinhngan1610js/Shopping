@@ -1,5 +1,5 @@
-<section id="new" class="w-100 mt-3 py-5">
-    <div class="row p-0 m-0">
+<section id="new" class="mt-3 py-3">
+    <div class="row p-2 m-2">
         <div class="one col-lg-4 col-md-12 col-12 p-0">
             <img class="img-fluid" src="./assets/img/tag/shoes.jpg" alt="">
             <div class="details">
